@@ -23,7 +23,7 @@ class App extends Component{
 			this.setState({
 				search:event.target.value,
 				filteredRobots:  this.state.robots.filter (robot=>{
-				return robot.name.toLowerCase().includes(this.state.search.toLowerCase());})
+				return robot.name.toLowerCase().includes(event.target.value.toLowerCase());})
 				});
 			
 			// console.log(filteredRobots);
